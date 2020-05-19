@@ -295,8 +295,8 @@ PieDonut=function(data,mapping,
                 df3$no=1:nrow(df3)
                 df3$label=df3[[donuts]]
                 if(showRatioDonut) {
-                        if(max(nchar(levels(df3$label)))<=2) df3$label=paste0(df3$label,"(",df3$ratio,")")
-                        else df3$label=paste0(df3$label,"\n(",df3$ratio,")")
+                        if(max(nchar(levels(df3$label)))<=2) df3$label=paste0(df3$label,"(",df3$Freq,")")
+                        else df3$label=paste0(df3$label,"\n(",df3$Freq,")")
                 }
                 df3$label[df3$ratio1==0]=""
 
