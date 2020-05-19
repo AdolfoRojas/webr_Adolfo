@@ -180,7 +180,7 @@ PieDonut=function(data,mapping,
         if(showRatioPie) {
 
                 df$label=ifelse(df$ratio>=showRatioThreshold,
-                        paste0(df$label,"\n(",scales::percent(df$ratio),")"),
+                        paste0(df$label,"\n(",df$Freq,")"),
                         as.character(df$label))
 
 
